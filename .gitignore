@@ -1,52 +1,78 @@
-# Prerequisites
-*.d
-
-# Object files
+# Ignore object files, shared libraries, and executables
 *.o
 *.ko
 *.obj
 *.elf
+*.gch
+*.so
+*.a
+*.dylib
+*.lib
+*.dll
+*.exe
+*.out
+*.axf
 
-# Linker output
-*.ilk
-*.map
-*.exp
-
-# Precompiled Headers
+# Ignore precompiled headers
 *.gch
 *.pch
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+# Ignore backup files
+*~
+*.bak
+*.swp
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+# Ignore generated files from CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
+# Ignore build directories
+/build/
+/bin/
+/lib/
+/tmp/
+/out/
+/Debug/
+/Release/
+/dist/
+
+# Ignore test binaries and results
+/tests/*.o
+/tests/*.exe
+/tests/*.out
+/tests/*.log
+
+# Ignore assembly listing files
+*.lst
+
+# Ignore map files
+*.map
+
+# Ignore hex and binary files
 *.hex
+*.bin
 
-# Debug files
+# Ignore dependency files
+*.d
+
+# Ignore IDE project files
+*.ide
+*.project
+*.cproject
+*.workspace
+
+# Ignore generated files by debugging tools
 *.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+*.DS_Store
+*.vscode/
+.vscode/
+*.idea/
+.idea/
+*.suo
+*.ntvs/
+*.njsproj
+*.sln
+*.VC.db
+*.VC.opendb
